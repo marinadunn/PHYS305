@@ -1,0 +1,22 @@
+/*************************************************************************
+
+Marina Dunn
+PHYS 305, Fall 2016
+Created: 12 October 2016
+Last Modified: 13 October 2016
+
+Purpose:
+
+
+Usage:
+
+To compile: $gcc DunnM_hw08_p2.c -o DunnM_hw08_p2.exe -lm
+To run: $DunnM_hw08_p2.exe
+
+*************************************************************************/
+
+#include <stdio.h>
+#include <math.h>
+#include <animation.h>
+#define PI = 3.14159265
+

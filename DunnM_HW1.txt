@@ -1,0 +1,43 @@
+
+1. Name:		   ___Marina Madeline Dunn_____________
+
+2. email address	   __marinadunn@email.arizona.edu___________
+
+3. Year: (Junior, etc.) _____________Junior____________
+
+4. Major:		   __Astronomy & Physics______
+
+5. List the physics  and astronomy courses you have taken:
+	Use numbers for UA courses.  For courses taken at other
+	institutions, give a short title (like "introductory mechanics")
+
+	__PHYS 105A, PHYS 161H, PHYS 162H, PHYS 261H, ASTR 170B,
+	ASTR 196, ASTR 296A, ASTR 250______
+
+6. List math courses taken:
+	Use the same form for your answer as in question 4.
+
+	__MATH 125, MATH 129, MATH 223______
+	________________________________________________________
+
+
+7. Have you taken Physics 105A
+
+	_______________________YES______________________________
+
+8. Have you programmed computers before?  If so, what languages did
+   you use?
+
+	____________________________C, some Python_________________________
+
+9. Have you done any ``numerical analysis''?
+
+        ________________________Not much___________________________
+
+        ___________________________________________________________
+
+10. Are you comfortable using Taylor expansions?
+
+	_________YES__________
+
+

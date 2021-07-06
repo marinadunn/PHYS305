@@ -1,0 +1,49 @@
+/***************************************************************************
+Marina Dunn
+PHYS 305, Fall 2016
+Created: 13 September
+Last modified: 14 September 2016
+
+Purpose:
+
+
+Usage:
+
+to compile: $gc DunnM_hw04_p2.c -o DunnM_hw04_p2.exe -lm
+to run: $DunnM_hw04_p2.exe
+
+
+
+
+
+
+
+***************************************************************************/
+
+#include <stdio.h>
+#include <math.h>
+
+double f(double x);
+
+int main(){
+
+  double  i, N=1000, x, f_x, xLo = 0  , xHi =1.5 , yLo,yHi, h, total_area;
+   
+  for(i=1; i<=N; i++){
+     h = (xHi-xLo)/N; // This is the step size/interval, (upper-lower)/nbins
+     total_area = 0;
+  for(x=xLo + (1/2N); x<=xHi; x+= h){//beginning of loop
+    f_x = (x*x)*exp(-(x*x));
+     total_area += h*f_x;
+     
+      // For midpoint method, I would use the x value in the middle of the bin, instead of the x value on the boundaries of the bin, then divide the area by the number of bins, N, then find the total area
+     printf("d\t%d\n",N,fabs(total_area - 0.98904261));
+    }
+  }
+
+
+
+
+  double f(double x){
+  return (x*x)*exp(-(x*x));
+}

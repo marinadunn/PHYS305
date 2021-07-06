@@ -1,0 +1,9 @@
+/*************************************************************************
+Homework 9
+
+Marina Dunn
+PHYS 305, Fall 2016
+Created: 18 October 2016
+Last Modified: 14 December 2016
+
+Using the fundamental concepts of last week, that for an elliptical orbit, in order to obey Kepler's 2nd Law, conservation of angular momentum must apply, we can now expand that to show that bound orbits have a 1/r potential in order to also be closed. This is because the ratio of the object sweeping out an orbit segment at a distance r1 in time t1 at an angle has a relationship to when it sweeps out another segment at a different r2 and t2, but at the same angle. This is because the impulses, or change in momentum, for each segment, must be equal but opposite.

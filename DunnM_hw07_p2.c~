@@ -1,0 +1,48 @@
+/***********************************************************************
+
+Marina Dunn
+PHYS 305, Fall 2016
+Created: September 29, 2016
+Last Modified: October 5, 2016
+
+Purpose: We are again finding the time at which a falling body reaches the ground, but with an added linear drag component, meaning drag corresponds to the velocity linearly. Velocity increases, negatively, until it reaches its terminal velocity.
+
+
+Usage:
+
+to compile: $gcc DunnM_hw07_p2.c -o DunnM_hw07_p2.exe -lm
+to run: $DunnM_hw07_p2.exe
+
+
+**********************************************************************/
+
+#include <stdio.h>
+#include <math.h>
+
+double a(double y, double vy, double t);
+double v_y(double y, double vy, double t);
+
+
+//For linear drag, dv_y(t)/dt = -g(1 + v_y(t)/v_term)
+
+int main (){
+
+  double x, y, t, v, vy, vx, x0, y0, v_y0, v_x0;
+  double y_new, v_new, y_half, v_half;
+  double t_half, t_start, t_end;
+  double v_term = 10; //m/s
+  double g = 9.8; // m/s^2
+
+for (t=t_start; t<t_end-h/2.; t+=h){
+   y_half = y0 + (h/2.)*vy;
+   v_half = v_y0 + (h/2.)* ;
+   y_new = y0 + h * v_y(y,v,t);
+   v_new = v_y0 + h * a(y,v,t); // a(y,v,t) returns value of acceleration to F(y,v,t)/m
+   
+   y = y_new;
+   v = v_new;
+
+
+
+
+}

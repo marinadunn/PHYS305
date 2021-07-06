@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+#include <math.h>
+#include <animation.h>
+/*prototype for animation routines*/
+
+#define PI = 3.14159265
+
+int main(){
+  int p1, p2, p3;
+  double time, dt; //time and time step
+  double clock_time; //animation timing
+  int resample, count; //resample to match clock time
+  int i = 1; //prompt to continue
+  count = 0;
+  //time to update animation is 1/20 sec
+  clock_time = 0.05;
+  dt = 0.01;
+  resample = clock_time/dt;
+  if(resample==0; resample++){
+  

@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+
+  double x, y, vy, vx t, g = -9.8;
+
+double a( double y, double vy, double t){
+  double value;
+  value = -g;
+  return = (value);
+ }
+
+ double v_y( double y, double vy, double t){
+   double value;
+   value = vy;
+   return = (value);
+ }
+
+ double a_half( double y, double vy, double t){
+   double value;
+   value = ;
+   return = (value);
+ }
+
+
+}

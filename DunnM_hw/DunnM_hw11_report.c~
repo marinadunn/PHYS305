@@ -1,0 +1,11 @@
+/**************************************************************************
+Homework 11
+
+Marina Dunn
+PHYS 305, Fall 2016
+Created: 8 November 2016
+Last Modified: 14 December 2016
+
+Purpose: The goal of this program is to use the relaxation method to find the temperature distribution inside an insulated rectangular region with a circular cavity in the center. The temperature of the rectangular region obeys Laplace's equation.We use a fixed grid size of 20 x 20. For all points interior to the rectangular region, we assume the intial temperature to be 0 when starting each iteration, unless they are inside the circular region, in which case, the initial T is 80 degrees. In this case, we start at a particular point: r=(1.0,1.0).
+
+Problem 2 is essentially the same idea as problem 1 with the modification to the size of the grid being used, and we are able to see for a grid GxG, the solution converges as G^2. In addition to the relaxation method, the successice over-relaxation method gives the solution to the function at the n+1th iteration, which can be found by using the original function at the nth iteration with an added correction term that includes w, the over-relaxation parameter. This value falls between 1 and 2, and optimizes convergence. A value of one gives a Gauss-Seidel curve, but for this case, we get a value of w=1.939.

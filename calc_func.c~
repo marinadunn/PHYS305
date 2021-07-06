@@ -1,0 +1,23 @@
+/* sinx.c -- example ysing functions, file name must be included during compilation to be defined in main program
+
+Usage: $gc -o testf sin2x.c calcfunc.c -lm
+
+*/
+
+#include <math.h>
+#include <stdio.h>
+double myfunc(double x);
+
+int main(){
+  double x, y;
+
+  //enter value for x
+  fprintf(stderr,"enter value for x: \n");
+  scanf("%lf",&x);
+  fprintfstderr, "x:%lf\n",x);
+
+  //calculate f(x)
+  y=myfunc(x);
+  fprintf(stderr, "%e %e\n",x,y);
+
+}

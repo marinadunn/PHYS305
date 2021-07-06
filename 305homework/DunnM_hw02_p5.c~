@@ -1,0 +1,31 @@
+/**************************************
+Marina Dunn
+PHYS 305, Fall 2016
+Created: 31 August 2016
+Last modified: 31 August 2016
+Homework 2, Problem 5
+
+Purpose:to create a Maclaurin series expansion, or Taylor series expansion about the point x=0, for f(x) = e^x, to the fourth order.
+
+Usage:
+
+$gcc DunnM_hw02_p5.c -o DunnM_hw02_p5.exe -lm //to compile
+$DunnM_hw02_p5.exe //to run
+
+
+*********************************************
+*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+
+  int i, x, f_x;
+  for(i=-0.5; i<0.5; i++){
+    x= i + 0.1;
+    f_x = exp(x);
+    printf(" x: %f    e^(%f):  %f  \n",x,x,f_x); //outputs exponential value for given x values
+  }
+    return (0);
+}

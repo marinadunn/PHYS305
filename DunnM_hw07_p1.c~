@@ -1,0 +1,50 @@
+/***********************************************************************
+
+Marina Dunn
+PHYS 305, Fall 2016
+Created: September 29, 2016
+Last Modified: October 5, 2016
+
+Purpose: The goal of this program is to resemble the motion of a falling body from a particular height with no drag/air resistance, and eventually find the time where it hits the ground, using second-order RK method.
+
+
+Usage: This program takes the functions a(y,v,t) and v_y(y,v,t) defined in a separate function, and then uses a 'for loop' to find y_new, v_new, y_half, and v_half, up until the object reaches the ground at a time t.
+
+to compile: $gcc DunnM_hw07_p1.c -o DunnM_hw07_p1.exe -lm
+to run: $DunnM_hw07_p1.exe
+
+
+**********************************************************************/
+
+#include <stdio.h>
+#include <math.h>
+
+double a(double y, double vy, double t);
+double v_y(double y, double vy, double t);
+
+// For the case of no drag, dy(t)/dt = v(t), dv(t)/dt = -g
+
+int main (){
+
+  double x, y, t, v, vy, vx;
+  double y0 = 10; //initial vertical position
+  double a_half; 
+  double h = 0.0001; // step size (in sec)
+  double v_y0 = 0; // m/s // initial vertical velocity
+  double g = 9.8; // m/s^2 //gravitational constant
+  double t_half, t_start = 0, t_end;
+  double y_new, y_half, x_half, y_end = 0;
+  double v_new, v_half;
+
+
+  for (t=t_start; t<t_end-h/2.; t+=h){
+   y_half = y0 + (h/2.)*vy;
+   v_half = v_y0 + (h/2.)* ;
+   y_new = y0 + h * v_y(y,v,t);
+   v_new = v_y0 + h * a(y,v,t); // a(y,v,t) returns value of acceleration to F(y,v,t)/m
+   
+   y = y_new;
+   v = v_new;
+}
+  printf(" time at which falling body reaches ground: %d \n", t_end);
+}
